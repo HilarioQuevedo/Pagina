@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>FORMS WEB</title>
+        <style type="text/css">
+            body
+            {
+                 font-family:Times NeW Roman, 'Times New Roman', Times, serif;
+                        color:rgb(11, 11, 14);
+                        background-color:   #DCDCDC;
+                   
+    
+                    }
+                    .row2cols {
+                            display: inline-grid;
+                            grid-template-columns: 300xp 300xp;
+                            grid-template-rows: 100xp 100xp;
+                            background-color: rgb(255, 255, 0);
+         
+                            
+                        }
+                        
+                        .row2cols input{
+                            background-color: rgb(223, 222, 222);
+    
+                        }
+                  button{
+                            aling="center";
+                            background-color: rgb(255, 165, 0);
+                            padding: 14px;
+                            font-size: 14px;
+                            color: rgb(238, 232, 236);
+            
+                    }
+        
+                        @media screen and(max-width:100px) {
+                            .row2cols {
+                            grid-template-columns: 1fr;
+                            }
+                        }
+                        
+                    </style>
+
+    </head>
+    <body>
+        <header>
+            
+
+            <center>
+                <div style="text-align: center;">
+                <h1><b> FORMULARIO WEB</b></h1></div>
+                </center>
+   
+        </header>
+        
+             <form>
+                <fieldset>
+                    <fieldset>
+                      <div>
+                        <center>
+                            <h2> DATOS PERSONALES</h2>
+                            </center>
+                      </div>
+                    
+                     <div class="row2cols">  
+                         <b><label for="Doc">No. de DPI:</label></b>
+                            <input type="text"
+                             id="Do" 
+                             name="Doc" 
+                             placeholder="Número de DPI" 
+                             minlength="13" 
+                             required>
+                     </div> 
+                     <div class="row2cols">  
+                         <b> <label for="nom">NOMBRES:</label></b>
+                             <input type="text" 
+                             id="nom" 
+                             name="nom" 
+                             placeholder="Nombres"  
+                             required>
+                     </div>
+                     <div class="row2cols">  
+                         <b> <label for="nombre">APELLIDOS:</label></b>
+                             <input type="text" 
+                             id="ap" 
+                             name="ap" 
+                             placeholder="Apellidos"  
+                             required>
+                     </div>
+                     <div class="row2cols">  
+                        <b> <label for="direccion">DIRECCIÓN FISICA:</label></b>
+                            <input type="text" 
+                            id="direc" 
+                            name="direc" 
+                            placeholder="Dirección"  
+                            required>
+                    </div>
+                    <div class="row2cols">  
+                        <b> <label for="pais">PAIS:</label></b>
+                            <input type="text" 
+                            id="p" 
+                            name="p" 
+                            placeholder="Pais"  
+                            required>
+                    </div>
+                    <div class="row2cols">  
+                        <b> <label for="correo">CORREO ELECTRONICO:</label></b>
+                            <input type="email" 
+                            id="correo" 
+                            name="correo" 
+                            placeholder="Correo Electronico"  
+                            required>
+                    </div>
+                    <div class="row2cols">  
+                        <b> <label for="Obrervaciones">EXTRAS:</label></b>
+                            <textarea type="text" 
+                            id="EX" 
+                            name="EX" 
+                            placeholder="Extras"  
+                            required></textarea>
+                    </div>
+               
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <center><h2> DATOS LABORALES   </h2></center>
+                    </div>    
+                
+                 <div class="row2cols">  
+                     <b><label for="empresa">EMPRESA PARA LA QUE LABORA</label></b> 
+                     <input type="text" 
+                         id="empresa" 
+                         name="empresa" 
+                         placeholder="Nombre de la Empresa"  
+                         required>     
+                 </div> 
+                 <div class="row2cols">  
+                     <b> <label for="sueldo">SALARIO:</label></b>
+                         <input type="text" 
+                         id="sueldo" 
+                         name="sueldo" 
+                         placeholder="Salario"  
+                         required>
+                 </div>
+                 <div class="row2cols">  
+                    <b> <label for="bonificacion">BONIFICACIÓN:</label></b>
+                        <input type="text" 
+                        id="bonificacion" 
+                        name="bonificacion" 
+                        placeholder="Bonificación"  
+                        required>
+                </div>
+                <div class="row2cols">  
+                    <b> <label for="otras">COMISIONES:</label></b>
+                        <input type="text" 
+                        id="otras" 
+                        name="otras" 
+                        placeholder="Comisiones"  
+                        required>
+                </div>
+            </fieldset>
+            <div class="button" style="text-align: center;">
+               <br> <button  value="Ingresar" required>Ingresar</button>
+            </div>
+        </fieldset>
+
+        </form>
+    </body>
+    
+    </html>
+</html>
